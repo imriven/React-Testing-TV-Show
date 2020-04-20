@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import Dropdown from "react-dropdown";
 import parse from "html-react-parser";
-import { fetchShow } from "../src/api/fetchShow"
+import { fetchShow } from "./api/fetchShow"
 
 import { formatSeasons } from "./utils/formatSeasons";
 
@@ -33,7 +32,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <img className="poster-img" src={show.image.original} alt={show.name} />
+      <img data-testid="image" className="poster-img" src={show.image.original} alt={show.name} />
       <h1>{show.name}</h1>
       {parse(show.summary)}
       <Dropdown
