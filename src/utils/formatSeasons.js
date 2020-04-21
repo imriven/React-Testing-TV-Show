@@ -9,3 +9,9 @@ export const formatSeasons = allEpisodes => {
   console.log(seasons);
   return seasons;
 };
+
+
+
+
+
+

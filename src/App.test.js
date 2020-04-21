@@ -1,9 +1,10 @@
 //import libraries
 import React from "react";
-import { render, fireEvent, wait, waitFor, getByTestId } from "@testing-library/react";
+import { render, debug, fireEvent, wait, waitFor, getByTestId } from "@testing-library/react";
 import { fetchShow as mockFetchShow} from "./api/fetchShow";
 import App from "./App";
 import { showData } from "./testData"
+
 
 //set up test
 jest.mock("./api/fetchShow");
